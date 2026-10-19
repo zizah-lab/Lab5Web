@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript</title>
+</head>
+<body>
+    <h1>Pengenalan JavaScript</h1>
+    <p id="pesan">Konten awal.</p>
+
+    <div>
+        <button type="button" onclick="latihan2()">Nama</button>
+        <button type="button" onclick="operasiDasar(9, 4)">Jalankan operasiDasar(9, 4)</button>
+        <button type="button" onclick="latihan4()">Nilai</button>
+        <button type="button" onclick="latihan5()">Angka</button>
+    </div>
+
+    <div>
+        <h3>Genap atau Ganjil</h3>
+        <label for="bilangan">Masukkan bilangan bulat:</label><br>
+        <input type="number" id="bilangan" step="1"><br>
+        <button type="button" onclick="cekBilangan()">Periksa</button>
+        <p id="hasilBilangan"></p>
+    </div>
+
+    <div>
+        <h3>Ubah Warna Latar</h3>
+        <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+        <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button>
+        <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+    </div>
+
+    <div>
+        <h3>Daftar Menu Makanan</h3>
+        <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng => Rp5.000</label><br>
+        <label><input type="checkbox" class="menu" value="500"> Tempe => Rp500</label><br>
+        <label><input type="checkbox" class="menu" value="2500"> Telur Dadar => Rp2.500</label><br>
+        <p>Total: Rp<span id="total">0</span></p>
+    </div>
+
+
+<div>
+    <h3>Mini Project: Kalkulator Nilai Mahasiswa</h3>
+    <label for="tugas">Nilai Tugas (30%):</label><br>
+    <input type="number" id="tugas"><br>
+    <label for="uts">Nilai UTS (30%):</label><br>
+    <input type="number" id="uts"><br>
+    <label for="uas">Nilai UAS (40%):</label><br>
+    <input type="number" id="uas"><br>
+    <button type="button" onclick="prosesNilai()">Hitung</button>
+    <p id="hasilNilai"></p>
+</div>
+
+<div>
+  <h3>Eksperimen Mandiri</h3>
+  <button type="button" onclick="tabelPerkalian(7)">Tabel perkalian 7</button>
+  <button type="button" onclick="toggleElemen()">Sembunyikan/Tampilkan tabel</button>
+  <pre id="tabelHasil"></pre>
+</div>
+
+<div>
+  <h3>Validasi Form</h3>
+  <label for="namaForm">Nama:</label><br>
+  <input type="text" id="namaForm"><br>
+  <label for="nilaiForm">Nilai (0–100):</label><br>
+  <input type="number" id="nilaiForm"><br>
+  <button type="button" onclick="validasiForm()">Validasi</button>
+  <p id="hasilValidasi"></p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
